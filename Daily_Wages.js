@@ -17,6 +17,9 @@ switch (empCheck) {
     default:
         empHrs = 0;
 }
+let empWage = empHrs * WAGE_PER_HOUR;
+console.log("Emp Wage: " + empWage);
+
 
 // UC 3 - Function
 function getWorkingHours(empCheck) {
@@ -30,5 +33,6 @@ function getWorkingHours(empCheck) {
     }
 }
 
-let empWage = empHrs * WAGE_PER_HOUR;
-console.log("Emp Wage: " + empWage);
+let tempEmpHrs = getWorkingHours(empCheck);
+ let tempEmpWages = tempEmpHrs * WAGE_PER_HOUR;
+console.log("Emp Wage by Function: " + tempEmpWages);
